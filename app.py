@@ -10,8 +10,9 @@ import pickle
 st.set_page_config(page_title="Gas Leak Detector", page_icon="🔥", layout="centered")
 
 # Load trained AI model
-with open('gas_ai_model.pkl', 'rb') as f:
+with open('models/gas_ai_model.pkl', 'rb') as f:
     model = pickle.load(f)
+
 
 # Initialize pygame mixer
 
