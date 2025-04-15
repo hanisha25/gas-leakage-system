@@ -1,7 +1,6 @@
 import streamlit as st
 import random
 import time
-import pygame
 import pandas as pd
 import csv
 import os
@@ -15,8 +14,6 @@ with open('gas_ai_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Initialize pygame mixer
-pygame.mixer.init()
-alarm_sound = pygame.mixer.Sound('alarm.mp3')
 
 # Simulate gas reading
 def simulate_gas_reading():
