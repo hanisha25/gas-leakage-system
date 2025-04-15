@@ -103,4 +103,11 @@ for _ in range(1000):
 
     time.sleep(refresh_rate)
 
-st.markdown("</div>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <audio autoplay>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+    </audio>
+    """,
+    unsafe_allow_html=True
+)
